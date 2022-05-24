@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { MovieProvider } from './Components/contexts/movieContext';
+import { SearchProvider } from './Components/contexts/searchContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <SearchProvider>
+    <MovieProvider> 
     <App />
+    </MovieProvider>
+    </SearchProvider>
   </React.StrictMode>
 );
 
