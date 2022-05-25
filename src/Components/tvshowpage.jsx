@@ -49,7 +49,7 @@ function displayTvshows() {
      
     <div>  
       <SearchBar handleChange={handleChange} search={search} />
-    <div className='grid grid-cols-5 gap-5 '>   
+    <div className='grid grid-cols-7 gap-2 '>   
     {displayTvshows()}
     </div> 
     </div>

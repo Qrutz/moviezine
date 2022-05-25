@@ -40,7 +40,7 @@ function displayMovies() {
     ))
   } else {
     return filteredMovies.map(movie => (
-      <div className='container'> 
+      <div className=''> 
       <Card image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} id={movie.id} key={movie.id}  title={movie.title} />
       </div>
     ))
@@ -55,7 +55,7 @@ function displayMovies() {
     
       <SearchBar handleChange={handleChange} search={search} />
     
-    <div className='grid grid-cols-5 gap-5 w-full'>
+    <div className='grid grid-cols-7 gap-2 w-full'>
       
     {displayMovies()}
     </div> 

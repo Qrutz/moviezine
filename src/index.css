@@ -11,3 +11,8 @@
   body {
     font-family: sans-serif;
   }
+
+  .main {
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+  }
