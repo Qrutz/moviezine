@@ -35,13 +35,13 @@ function displayMovies() {
   if (search === '') {
     return movies.map(movie => (
       <div className='container'> 
-      <Card image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} key={movie.id}  title={movie.title} />
+      <Card image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} id={movie.id} key={movie.id}  title={movie.title} />
       </div>
     ))
   } else {
     return filteredMovies.map(movie => (
       <div className='container'> 
-      <Card image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} key={movie.id}  title={movie.title} />
+      <Card image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} id={movie.id} key={movie.id}  title={movie.title} />
       </div>
     ))
   }

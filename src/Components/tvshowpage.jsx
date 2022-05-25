@@ -31,13 +31,13 @@ function displayTvshows() {
   if (search === '') {
     return tvshows.map(show => (
       <div className='container'>
-      <Card image={`https://image.tmdb.org/t/p/w500${show.poster_path}`} key={show.id}  title={show.name} />
+      <Card image={`https://image.tmdb.org/t/p/w500${show.poster_path}`}  key={show.id}  title={show.name} />
       </div>
     ))
   } else {
     return filteredTvshows.map(show => (
       <div className='container'>
-      <Card image={`https://image.tmdb.org/t/p/w500${show.poster_path}`} key={show.id}  title={show.name} />
+      <Card image={`https://image.tmdb.org/t/p/w500${show.poster_path}`}  key={(show.id) + 1}  title={show.name} />
       </div>
     ))
   }
